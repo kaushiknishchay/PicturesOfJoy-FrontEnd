@@ -372,18 +372,20 @@ $(document).ready(function () {
 	/*-----------------------------------------------------------------------------------*/
 	/*	REVOLUTION
 	 /*-----------------------------------------------------------------------------------*/
-	$('.tp-fullscreen').revolution({
-		delay: 9000,
-		startwidth: 1170,
-		startheight: 750,
-		hideThumbs: 0,
-		hideArrowsOnMobile: "on",
-		fullWidth: "on",
-		fullScreen: "on",
-		soloArrowLeftHOffset: 0,
-		soloArrowRightHOffset: 0,
-		fullScreenOffsetContainer: ".mode-sm:not(.onepage) .navbar, .mode-xs:not(.onepage) .navbar"
-	});
+	setTimeout(function () {
+		$('.tp-fullscreen').revolution({
+			delay: 9000,
+			startwidth: 1170,
+			startheight: 750,
+			hideThumbs: 0,
+			hideArrowsOnMobile: "on",
+			fullWidth: "on",
+			fullScreen: "on",
+			soloArrowLeftHOffset: 0,
+			soloArrowRightHOffset: 0,
+			fullScreenOffsetContainer: ".mode-sm:not(.onepage) .navbar, .mode-xs:not(.onepage) .navbar"
+		});
+	}, 4000);
 	/*-----------------------------------------------------------------------------------*/
 	/*	FANCYBOX
 	 /*-----------------------------------------------------------------------------------*/
